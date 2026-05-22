@@ -11,7 +11,7 @@ document.getElementById("form").addEventListener("submit", async (e) => {
     agree: document.getElementById("agree").checked
   };
 
-  const res = await fetch("https://webfinal-emq5.onrender.com/register", {
+  const res = await fetch("https://webfinal-emq5.onrender.com", {
     method: "POST",
     headers: {
       "Content-Type": "application/json"
