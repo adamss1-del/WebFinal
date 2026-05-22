@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Student Course Registration</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+<div class="container">
+  <h2>Student Registration System</h2>
+
+  <form id="form">
+
+    <input type="text" id="name" placeholder="Full Name" required />
+
+    <input type="email" id="email" placeholder="Email Address" required />
+
+    <select id="course" required>
+      <option value="">Select Course</option>
+      <option value="Web Dev">Web Development</option>
+      <option value="AI">AI & Machine Learning</option>
+      <option value="Cyber">Cybersecurity</option>
+    </select>
+
+    <div class="radio-group">
+      <label>
+        <input type="radio" name="mode" value="Online" required>
+        Online
+      </label>
+
+      <label>
+        <input type="radio" name="mode" value="Offline">
+        Offline
+      </label>
+    </div>
+
+    <label>
+      <input type="checkbox" id="agree" required>
+      I agree to terms and conditions
+    </label>
+
+    <button type="submit">Register</button>
+
+  </form>
+</div>
+
+<script src="app.js"></script>
+
+</body>
+</html>
